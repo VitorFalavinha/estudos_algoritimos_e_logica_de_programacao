@@ -5,8 +5,6 @@ Algoritmo "Crescente"
 Var
 x, y :inteiro
 
-
-
 Inicio
     escreval("Digite dois numeros: ")
     leia(x)
@@ -14,16 +12,14 @@ Inicio
     
     enquanto x <> y faca
          se x < y entao
-            escreval("CRESCENTE!!!")
+            escreval("CRESCENTE")
          senao
-            escreval("DECRESCENTE!!!")
+            escreval("DECRESCENTE")
          fimse
          
          escreval("Digite outros dois números: ")
          leia(x)
          leia(Y)
     fimenquanto
-
-
 
 Fimalgoritmo
