@@ -12,20 +12,23 @@ Inicio
       d <- 0
       
       enquanto cod <> 4 faca
-              escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
-              leia(cod)
-              
               se cod = 1 entao
                  a <- a + 1
+              escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+              leia(cod)
                  
                  senao
                     se cod = 2 entao
                     g <- g + 1
+              escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+              leia(cod)
                     
                     senao
                        se cod = 3 entao
                        d <- d + 1
                        
+              escreva("Informe um codigo (1, 2, 3) ou 4 para parar: ")
+              leia(cod)
                        fimse
                  fimse
               fimse
