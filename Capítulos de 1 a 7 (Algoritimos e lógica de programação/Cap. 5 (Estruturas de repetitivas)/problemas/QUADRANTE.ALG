@@ -27,9 +27,9 @@ Inicio
                        fimse
                    fimse
                fimse
-               escreval("Digite os valores das coordenadas X e Y: ")
-               leia(x)
-               leia(y)
+         escreval("Digite os valores das coordenadas X e Y: ")
+         leia(x)
+         leia(y)
       fimenquanto
 
 
