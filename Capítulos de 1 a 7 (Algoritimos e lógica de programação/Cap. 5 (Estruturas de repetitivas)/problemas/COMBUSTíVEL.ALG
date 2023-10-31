@@ -1,5 +1,4 @@
 Algoritmo "combustível"
-// 
 
 Var
 cod, a, g, d : inteiro
@@ -36,7 +35,5 @@ Inicio
       escreval("Alcool: ", a)
       escreval("Gasolina: ", g)
       escreva("Diesel: ", d)
-
-
 
 Fimalgoritmo
