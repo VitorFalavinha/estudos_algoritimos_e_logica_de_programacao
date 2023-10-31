@@ -24,6 +24,4 @@ Inicio
        media <- (n1 + n2) / 2
        escreva("MEDIA = ", media:4:2)
                         
-
-
 Fimalgoritmo
