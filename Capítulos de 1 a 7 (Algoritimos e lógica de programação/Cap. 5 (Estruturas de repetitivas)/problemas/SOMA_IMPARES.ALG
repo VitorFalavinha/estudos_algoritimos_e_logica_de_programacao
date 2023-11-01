@@ -23,13 +23,8 @@ Inicio
            se i % 2 <> 0 entao
               soma <- soma + i
            fimse
-           
       fimpara
       
       escreval("SOMA DOS IMPARES = ", soma)
-
-      
-      
-
 
 Fimalgoritmo
