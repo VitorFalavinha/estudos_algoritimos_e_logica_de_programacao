@@ -13,10 +13,10 @@ Inicio
            leia(n)
            
              se (n % 2 = 0) e (n > 0) entao
-                 escreval("PAR")
+                 escreval("PAR POSITIVO")
              senao
                  se (n % 2 <> 0) e (n > 0) entao
-                     escreval("IMPAR")
+                     escreval("IMPAR POSITIVO")
                  senao
                      se (n % 2 = 0) e (n < 0) entao
                          escreval("PAR NEGATIVO")
@@ -29,9 +29,6 @@ Inicio
                      fimse
                  fimse
             fimse
-            
-           escreva("Digite um numero: ")
-           leia(n)
       fimpara
 
 Fimalgoritmo
