@@ -2,18 +2,17 @@ Algoritmo "fatorial"
 //  
 
 Var
-   n, fat, i : inteiro
+   n, fat, i: inteiro
 
 Inicio
       escreva("Digite o valor de N: ")
       leia(n)
 
-      fat <- 0
+      fat <- 1
       
-      para i de 0 ate n faca
+      para i de 1 ate n faca
 
-        fat <- i
-        fat(i + 1)
+        fat <- fat * i
                
       fimpara
           escreva("FATORIAL = ", fat)
