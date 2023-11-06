@@ -25,15 +25,15 @@ Inicio
            
            total_cob <- quant_cob + total_cob
            
-           se tipo_cob = "C" entao
+           se (tipo_cob = "C") ou (tipo_cob = "c") entao
               total_coe <- total_coe + quant_cob
               
               senao
-                   se tipo_cob = "R" entao
+                   se (tipo_cob = "R") ou (tipo_cob = "r") entao
                       total_rat <- total_rat + quant_cob
                       
                    senao
-                        se tipo_cob = "S" entao
+                        se (tipo_cob = "S") ou (tipo_cob = "s") entao
                            total_sap <- total_sap + quant_cob
                         fimse
                    fimse
