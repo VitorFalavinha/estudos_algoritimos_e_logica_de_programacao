@@ -9,13 +9,12 @@ Inicio
       leia(n)
       
       enquanto n <> 0 faca
-               se n % 2 = 0 entao
-               soma <- n + (n + 2) + (n + 4) + (n + 6) + (n + 8)
-               
-               senao
-               soma <- (n + 1) + (n + 3) + (n + 5) + (n + 7) + (n + 9)
-               
+               se n % 2 <> 0 entao
+                  n <- n + 1
                fimse
+
+               soma <- 5 * n + 20
+               
                escreval("SOMA = ", soma)
                escreva("Digite um numero inteiro: ")
                leia(n)
