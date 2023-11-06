@@ -38,8 +38,6 @@ Inicio
                         fimse
                    fimse
            fimse
-
-           
       fimpara
       
       perc_coe <- (total_coe * 100) / total_cob
