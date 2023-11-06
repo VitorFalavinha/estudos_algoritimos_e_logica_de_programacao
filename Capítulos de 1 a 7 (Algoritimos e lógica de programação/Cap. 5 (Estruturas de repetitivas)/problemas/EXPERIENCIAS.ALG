@@ -3,7 +3,9 @@ Algoritmo "experiencias"
 
 Var
    i, casos, quant_cob, total_cob, total_coe, total_rat, total_sap : inteiro
+   
    perc_coe, perc_rat, perc_sap : real
+   
    tipo_cob : caractere
 
 Inicio
