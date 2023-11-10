@@ -2,9 +2,10 @@ Algoritmo "maior_posição"
 // 
 
 Var
-   N, i : inteiro
-   x : real
+   N, i, posicao : inteiro
+   maior : real
    vet : vetor[0..15] de real
+
 
 
 Inicio
@@ -16,7 +17,21 @@ Inicio
            leia(vet[i])
       fimpara
       
+      maior <- vet[0]
+      posicao <- 0
+            
+      para i de 1 ate N-1 faca
+           se vet[i] > maior entao
+              maior <- vet[i]
+              posicao <- i
+
+           fimse
+           
+
+      fimpara
       
-
-
+      escreval("MAIOR VALOR: ",maior:4:2)
+      escreval("POSIÇÃO: ",posicao)
+           
+      
 Fimalgoritmo
