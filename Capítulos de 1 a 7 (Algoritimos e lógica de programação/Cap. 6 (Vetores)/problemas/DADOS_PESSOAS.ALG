@@ -1,7 +1,7 @@
 Algoritmo "dados_pessoas"
 
 Var
-   N, i,n_homens : inteiro
+   N, i,n_mulheres, n_homens : inteiro
    ALTURA : vetor[0..9] de real
    GENERO : vetor[0..9] de caractere
    maior_alt, menor_alt, somaAlt_mulheres, mediaAlt_mulheres: real
@@ -18,6 +18,7 @@ Inicio
       fimpara
       
       maior_alt <- ALTURA[0]
+      
       para i de 1 ate N-1 faca
            se ALTURA[i] > maior_alt entao
               maior_alt <- ALTURA[i]
@@ -33,10 +34,13 @@ Inicio
       fimpara
       n_homens <- 0
       para i de 0 ate N-1 faca
-           se (GENERO[i] = "M") OU (GENERO[i] = "m") entao
-               n_homens <- n_homens + 1
+           se (GENERO[i] = "F") OU (GENERO[i] = "f") entao
+               n_mulheres <- n_mulheres + 1
            fimse
       fimpara
+      
+        escreval("MENOR ALTURA = ", menor_alt:4:2)
+        escreval("MAIOR ALTURA = ", maior_alt:4:2)
       
       somaAlt_mulheres <- 0
 
@@ -47,12 +51,15 @@ Inicio
            fimse
       fimpara
       
-      mediaAlt_mulheres <- somaAlt_mulheres / (N - n_homens)
+      se n_mulheres = 0 entao
+         escreval("Não mulheres para se calcular a média!")
+      senao
+         mediaAlt_mulheres <- somaAlt_mulheres / n_mulheres
+         escreval("MEDIA DAS ALTURAS DAS MULHERES = ",mediaAlt_mulheres:4:2)
+      fimse
       
-      escreval("MENOR ALTURA = ", menor_alt:4:2)
-      escreval("MAIOR ALTURA = ", maior_alt:4:2)
-      escreval("MEDIA DAS ALTURAS DAS MULHERES = ",mediaAlt_mulheres:4:2)
+      n_homens <- N - n_mulheres
+
       escrevaL("NUMERO DE HOMENS = ", n_homens)
       
-
 Fimalgoritmo
