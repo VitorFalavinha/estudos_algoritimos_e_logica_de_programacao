@@ -40,6 +40,7 @@ Inicio
          fimpara
       
       escreval
+      escreval
       escreva("Escolha uma coluna: ")
       leia(coluna)
       escreva("COLUNA ESCOLHIDA: ")
@@ -48,11 +49,24 @@ Inicio
          fimpara
          
          escreval
+         escreval
          escreva("DIAGONAL PRINCIPAL : ")
          
          para i de 0 ate N-1 faca
               escreva(mat[i,i])
          fimpara
-
+         
+         escreval
+         escreval
+         escreval("MATRIZ ALTERADA: ")
+         para i de 0 ate N-1 faca
+              para j de 0 ate N-1 faca
+                   se mat[i,j] < 0 entao
+                      mat[i,j] <- Exp(mat[i,j], 2)
+                   fimse
+                   escreva(mat[i,j]:4:1, " ")
+              fimpara
+             escreval
+         fimpara
 
 Fimalgoritmo
