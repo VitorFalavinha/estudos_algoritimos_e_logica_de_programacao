@@ -1,7 +1,15 @@
-a: float
-b: int
+x: int
+soma: int
 
-a = 5.3
-b = int(a)
+x = int(input("Digite um numero:"))
+soma = 0 
 
-print(b)
+while x != 0:
+    soma = soma + x
+    x = int(input("Digite outro numero:"))
+
+print("Soma =",soma)
+
+
+
+
