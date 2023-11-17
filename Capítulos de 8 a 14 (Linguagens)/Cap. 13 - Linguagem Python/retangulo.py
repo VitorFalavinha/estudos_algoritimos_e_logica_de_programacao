@@ -4,8 +4,8 @@ area: float
 perimeter: float
 diagonal: float
 
-base = float(input("Base do retangulo:"))
-height = float(input('Altura do retangulo:'))
+base = float(input("Base do retangulo: "))
+height = float(input('Altura do retangulo: '))
 
 area = base * height
 perimeter = (base + height) * 2
