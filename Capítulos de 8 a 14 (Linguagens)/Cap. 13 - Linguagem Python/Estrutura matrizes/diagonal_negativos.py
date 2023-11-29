@@ -9,9 +9,9 @@ for i in range(N):
 print('DIAGONAL PRINCIPAL: ')
 
 for i in range(N):
-    for j in range(N):
-        if [i] == [j]:
-            print(f'{mat[i][j]} ', end='')
+   # for j in range(N):
+   #     if [i] == [j]:
+            print(f'{mat[i][i]} ', end='')
 
 quantNeg = 0
 for i in range(N):
