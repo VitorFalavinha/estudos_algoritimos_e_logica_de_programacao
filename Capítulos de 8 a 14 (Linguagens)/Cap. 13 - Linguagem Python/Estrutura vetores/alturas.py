@@ -1,34 +1,33 @@
+N: int; menores: int; menoresPerc: float; somaAlt: float; mediaAlt: float
+
 N = int(input('Quantas pessoas serão digitadas? '))
 
-name:[str] = [0 for x in range(N)]
-age:[int] = [0 for x in range(N)]
-height:[float] = [0 for x in range(N)]
+nome: [str] = [0 for x in range (N)]
+idade: [int] = [0 for x in range (N)]
+altura: [float] = [0 for x in range (N)]
 
-for i in range(0,N):
-    print(f'Dados da {i+1}ª pessoa: ')
-    name = str(input('Nome: '))
-    age = int(input('Idade: '))
-    height = float(input('Altura: '))
+for i in range (N):
+    print(f'Digite os dados da {i+1}ª pessoa: ')
+    nome[i] = str(input('Nome: '))
+    idade[i] = int(input('Idade: '))
+    altura[i] = float(input('Altura: '))
 
-addHeight = 
-for i in range(0,N):
-    addHeight = addHeight + height[i]
+somaAlt = 0.0
+for i in range(N):
+    somaAlt = somaAlt + altura[i]
 
-avgHeight = addHeight / N
+mediaAlt = somaAlt / N
 print()
-print(f'Altura média: {avgHeight:.2f}')
+print(f'Altura média: {mediaAlt:.2f}')
 
-less16 = 0
-for i in range(0,N):
-    if age[i] < 16:
-        less16 = less16 + 1
-    
-less16_per = (N / less16) * 100
+menores = 0
+for i in range (N):
+    if idade[i] < 16:
+        menores = menores + 1
 
-print(f'Pessoas com menos de 16 anos: {less16_per:.}')
+menoresPerc = (menores / N) * 100
+print(f'Pessoas menores de 16 anos: {menoresPerc:.1f}% e seus nomes são:')
 
-for i in range(0,N):
-    if age[i] < 16:
-        print(name[i])
-
-
+for i in range(N):
+    if idade[i] < 16:
+        print(nome[i])
