@@ -3,7 +3,7 @@ N = int(input('Quantas colunas tera sua matriz? '))
 
 A = [[0 for x in range(N)]for x in range(M)]
 B = [[0 for x in range(N)]for x in range(M)]
-C = [[0 for x in range(N)]for x in range(M) ]
+C = [[0 for x in range(N)]for x in range(M)]
 
 print('Digite os valores da matriz A: ')
 for i in range(M):
