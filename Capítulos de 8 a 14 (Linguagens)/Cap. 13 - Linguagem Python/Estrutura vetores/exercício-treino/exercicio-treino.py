@@ -1,7 +1,7 @@
 N = int(input('Numero de pessoas cadastradas: '))
 
 height:[float] = [0 for x in range(N)]
-gender:[str] = [0 for x in range(N)]
+gender:[str]=[0 for x in range(N)]
 
 somaHeight = 0
 genderMale = 0
