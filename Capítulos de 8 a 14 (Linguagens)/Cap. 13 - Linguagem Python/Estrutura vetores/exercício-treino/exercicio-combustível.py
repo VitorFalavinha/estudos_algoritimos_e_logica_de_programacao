@@ -14,7 +14,8 @@ def repetirCalculo(repeat):
 
     print(f'O valor final do consumo pelas viagens é: R${(tripTotalLenght/kmL)*priceLitter:.2f}')
 
-    repeat = (input('Deseja adicionar outro local? (S/N)'))
+    repeat = (input('Deseja calcular outra viagem? (S/N)'))
+    
     if repeat == 'S' or 's':
         repetirCalculo(repeat)
     else:
