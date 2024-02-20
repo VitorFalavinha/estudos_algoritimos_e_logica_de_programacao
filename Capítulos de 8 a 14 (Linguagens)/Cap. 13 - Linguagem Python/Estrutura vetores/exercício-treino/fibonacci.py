@@ -4,20 +4,23 @@ N = int(input('Quantos termos da sequência de Fibonacci vamos mostrar? '))
 
 t1 = 0
 t2 = 1
+t3 = t1 + t2
 cont = 2
 print(t1,'-', t2, end=' - ')
 
-def repeat(t3):
-    while cont < N:
+def repeat(t1, t2, t3, cont):
+    if cont < N:
         t3 = t1 + t2
-        print(t3)
+        print(t3, end=' - ')
         t1 = t2
         t2 = t3
         cont = cont+1
-        repeat(t3)
+        repeat(t1, t2, t3, cont)
+    else:
+        print('Fim!')
 
 
-repeat(repeat)
+repeat(t1, t2, t3, cont)
 
 #for i in range(3,N+1):
 #    t3 = t1 + t2
