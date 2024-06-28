@@ -7,8 +7,6 @@ unitPrice = float(input("Preço unitário do produto: "))
 quant = int(input("Quantidade comprada: "))
 cash = float(input("Dinheiro recebido: "))
 
-
-
 if cash > unitPrice * quant:
     change = cash - unitPrice * quant
     print(f"TROCO = R$ {change:.2f}")

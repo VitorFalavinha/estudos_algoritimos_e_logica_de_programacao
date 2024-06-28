@@ -15,3 +15,4 @@ elif x == 0 and y != 0:
     print('Eixo Y.')
 elif x != 0 and y == 0:
     print('Eixo X.')
+
