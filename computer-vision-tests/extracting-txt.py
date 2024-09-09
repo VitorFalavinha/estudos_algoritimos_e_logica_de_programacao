@@ -1,24 +1,28 @@
 import pytesseract
 import cv2
 import os
+import re
 
 def readImage(imgPath):
-    img = cv2.imread(f"{imgPath}")
-    pytesseract.pytesseract.tesseract_cmd = r"C:\Program Files\Tesseract-OCR\tesseract.exe"
+    if not os.path.exists(imgPath):
+        print("Arquivo não encontrado!")
+        return
+
+    img = cv2.imread(imgPath)
+    pytesseract.pytesseract.tesseract_cmd = r"c:\Program Files\Tesseract-OCR\tesseract.exe"
     text = pytesseract.image_to_string(img)
-    print(text.replace('\n',''))
-    #rename(imgPath,text)
+    valid_text = re.sub(r'[^\w\-_\. ]', '', text)  # Limpa caracteres especiais
+    print(valid_text.replace('\n',''))
+    
+    oldnameCompletePath = os.path.abspath(imgPath)
 
-    oldname = r'C:\Users\vitor\Documents\Algorítimos e lógica de programação Udemy\estudos_algoritimos_e_logica_de_programacao\computer-vision-tests'
-    oldnameCompletePath = os.path.join(oldname,imgPath)
-
-    path = r'C:\Users\vitor\Documents\Algorítimos e lógica de programação Udemy\estudos_algoritimos_e_logica_de_programacao\computer-vision-tests\assets'
-    newName = os.path.join(path,(text.replace('\n','')))
+    path = r'C:\Users\vitor\OneDrive\Documentos\Algorítimos e lógica de programação Udemy\estudos_algoritimos_e_logica_de_programacao\computer-vision-tests\assets'
+    newName = os.path.join(path, valid_text)
 
     os.rename(oldnameCompletePath, newName + '.jpg')
     
 
-imgPath = input('Insert image path: ')
+imgPath = input("Digite o caminho da imagem: ")
 readImage(imgPath)
 
 
